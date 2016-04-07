@@ -1,0 +1,19 @@
+section {
+	display: none;
+	height: 100%;
+	padding-top: 150px;
+	text-align: center;
+	background: #fff;
+}
+section.active {
+	display: block;
+}
+.panel {
+	max-width: 200px; 
+	margin: 0 auto;
+}
+#code {
+	letter-spacing: 0.25em;
+	font-size: 30px;
+	font-weight: 500;
+}

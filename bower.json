@@ -1,0 +1,25 @@
+{
+  "name": "demo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "jesuscmd <jesuscmd@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.5.3",
+    "bootstrap-sass": "~3.3.6",
+    "bootstrap": "~3.3.6"
+  }
+}

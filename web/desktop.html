@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="es"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Demo CID sinc</title>
+  <meta name="description" content="Test de sincronización.">
+  <meta name="application-name" content="CID DEMO"/>
+
+  <script type="text/javascript" src='/socket.io/socket.io.js'></script>
+
+
+
+  <!-- <link rel="stylesheet" href="css/inline.css" inline>   -->
+  <!-- build:css css/main.min.css-->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="css/desktop.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <!-- endbuild -->
+  <!-- build:js js/topscript.min.js -->
+  <script>
+  </script>
+  <!-- endbuild -->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">CID Group</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
+        <ul class="nav navbar-nav">
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Intro Section -->
+  <section id="intro" class="intro-section active">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>ACCEDE DESDE TU MÓVIL AL SITIO WEB:</h2>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <!-- <p><span class="badge">1</span> VISITA ESTA URL EN TU MÓVIL:</p>
+          <p class="lead"><strong clas>developer87.com/</strong>
+          </p> -->
+          <p>
+            <span class="badge">1</span> Ingresa este código:
+          </p>
+          <p></p>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <span class="lead"><span id="code"></span></span>
+            </div>
+          </div>
+          <p><br></p>
+          <p><span class="badge">2</span> Acerca tu dispositivo y gíralo.</p>
+          <img src="img/phone.png" alt="" class="phone">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="success">
+    <h1>Bienvenido</h1>
+    <h3>Usuario con código:</h3>
+    <h3 id="codeL"></h3>
+    <p id="logRotate"></p>
+  </section>
+  <section id="loader" class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="cssload-thecube">
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
+          </div>
+          <br>
+          <br>
+          <p>SINCRONIZANDO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- build:js js/scripts.min.js -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="js/desktop.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

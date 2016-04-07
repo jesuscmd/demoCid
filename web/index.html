@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="es"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, maximum-scale=1">
+  <!-- <meta name="robots" content="noindex,nofollow"> -->
+  <title>Demo CID sinc</title>
+  <meta name="description" content="Test de sincronización.">
+  <meta name="application-name" content="CID DEMO"/>
+
+  <script type="text/javascript" src='/socket.io/socket.io.js'></script>
+
+  <!-- <link rel="stylesheet" href="css/inline.css" inline>   -->
+  <!-- build:css css/main.min.css-->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+  <section class="section-code active">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 centered">
+          <p class="lead">Bienvenido,<br> para acceder ingresa abajo el código que se muestra en tu computadora.</p>
+          <form name="codeform">
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" id="code" placeholder="CODE" maxlength="5">
+            </div>
+            <div class="form-group">
+              <button type="submit" id="envio" class="btn btn-primary btn-lg btn-block">SINCRONIZAR</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="loader" class="section-loader">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cssload-thecube">
+              <div class="cssload-cube cssload-c1"></div>
+              <div class="cssload-cube cssload-c2"></div>
+              <div class="cssload-cube cssload-c4"></div>
+              <div class="cssload-cube cssload-c3"></div>
+            </div>
+            <br>
+            <br>
+            <p>SINCRONIZANDO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-error">
+      <div class="container">
+        <div class="row">
+          <p class="col-xs-8 centered" id="message-error"></p>
+        </div>
+      </div>
+    </section>
+    <section class="section-success">
+      <div class="container">
+        <div class="row screenRotation">
+          <div class="col-xs-8 centered">
+            <p id="message-success">
+              Acerca tu dispositivo y gíralo.
+              <br>
+            </p>
+            <img src="img/rotation-screen.png" class="img-responsive" alt="">
+          </div>
+        </div>
+        <div class="row screenAccess">
+          <div class="centered">
+            <h1>Bienvenido</h1>
+            <p>Intenta girar tu dispositivo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- build:js js/scripts.min.js -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/mobile.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>
